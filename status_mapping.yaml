@@ -1,0 +1,9 @@
+# Nilai mentah MPM → status kanonik. Nilai di luar daftar = error E-STATUS.
+row_status:
+  Approve: APPROVED
+  Pending: PENDING
+  Reject: REJECTED
+  Cancel: CANCELLED
+  "-": NOT_STARTED
+known_badges: [Partial, Complete, Draft Only]
+complete_badge: Complete

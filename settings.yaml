@@ -1,0 +1,27 @@
+# Pengaturan umum. Path relatif terhadap root project.
+timezone: Asia/Jakarta
+cycle_year: 2026                       # cycle_config: tahun cycle aktif
+deadline: "2026-12-31T23:50:00"        # deadline cycle (WIB)
+
+paths:
+  database: data/tracker.sqlite
+  msform_responses: data/msform_responses.xlsx   # file Excel response msForm (tersinkron OneDrive)
+  master_data_inbox: data/master_data.xlsx
+  snapshots: snapshots
+  edge_profile: data/edge-profile               # profil Edge khusus bot (login SSO sekali)
+
+schedule:
+  read_interval_minutes: 60
+  publish_times: ["04:30", "12:00", "18:00"]
+
+scraper:
+  browser_channel: msedge         # Microsoft Edge (bawa sesi Windows SSO)
+  headless: false                 # true setelah terbukti sesi SSO jalan headless
+  page_timeout_seconds: 45
+  delay_between_pages_seconds: 5  # beban ke MPM
+  # Berhenti setelah 1 kali gagal login (E-LOGIN) sengaja tidak bisa diatur di sini: batasan CLAUDE.md.
+
+# Halaman awal MPM, dipakai perintah `login` untuk login SSO sekali di profil Edge bot.
+mpm_home_url: "https://ISI-URL-MPM"
+
+doc_id_pattern: '^DOC-\d{4}-\d{5}$'

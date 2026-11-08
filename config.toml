@@ -1,0 +1,10 @@
+# Desain dashboard memakai tema terang; jangan ikut mode gelap browser.
+[theme]
+base = "light"
+primaryColor = "#1C1C1F"
+backgroundColor = "#F4F4F6"
+secondaryBackgroundColor = "#EDEDF0"
+textColor = "#1C1C1F"
+
+[browser]
+gatherUsageStats = false

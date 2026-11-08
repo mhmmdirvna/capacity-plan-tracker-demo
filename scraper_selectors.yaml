@@ -1,0 +1,20 @@
+# ASUMSI. Struktur HTML MPM asli belum diketahui. Setelah satu halaman approval asli disimpan
+# (dianonimkan) ke tests/fixtures/, sesuaikan selector di sini; rules engine tidak perlu diubah.
+ready: "table.approval-log"           # elemen yang menandakan halaman approval sudah termuat
+login_markers:                        # tanda sesi SSO tidak valid
+  url_contains: ["login.microsoftonline.com", "/_layouts/15/Authenticate.aspx", "AccessDenied"]
+header:
+  doc_id: ".doc-header .doc-id"
+  project_name: ".doc-header .project-name"
+  flow_badge: ".doc-header .badge-flow"
+  status_badge: ".doc-header .badge-status"
+  main_document: ".doc-header a.main-document"
+rows: "table.approval-log tbody tr"
+cells:
+  section: "td.section"
+  role: "td.role"
+  name: "td.name"
+  status: "td.status"
+  request_date: "td.request-date"
+  response_date: "td.response-date"
+date_format: "%d/%m/%Y, %H.%M.%S"

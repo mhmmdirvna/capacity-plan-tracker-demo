@@ -1,0 +1,38 @@
+# Label pertanyaan msForm → field internal. Dicocokkan dengan awalan label kolom di file response
+# (kolom dengan label sama dari section berbeda, mis. Q2 per departemen, Q7/Q12 per metode, digabung).
+meta:
+  response_id: ["ID"]
+  submitted_at: ["Completion time", "Waktu penyelesaian"]
+  email: ["Email"]
+  name: ["Name", "Nama"]
+fields:
+  departemen: ["Mohon pilih Departemen Anda"]
+  aplikasi: ["Silahkan pilih aplikasi Anda"]
+  jenis_dokumen: ["Please choose your Document"]
+  periode: ["Periode Capacity Plan"]
+  metode_cpr: ["Apakah dokumen CPR Anda di-approve"]
+  cpr_doc_id: ["DOC ID MPM untuk CPR"]
+  cpr_link: ["Link approvalLog CPR di MPM"]
+  cpr_pdf: ["Link dokumen CPR full sign-off"]
+  kebutuhan: ["Apakah Anda membutuhkan penambahan kapasitas"]
+  metode_cpd: ["Apakah dokumen CPD Anda di-approve"]
+  cpd_doc_id: ["DOC ID MPM untuk CPD"]
+  cpd_link: ["Link approvalLog CPD di MPM"]
+  cpd_pdf: ["Link dokumen CPD full sign-off"]
+  tahun_cpd_berlaku: ["Tahun pembuatan CPD yang masih berlaku"]
+  vm_cpu: ["[VM] IN TOTAL Penambahan Kapasitas CPU"]
+  vm_memori: ["[VM] IN TOTAL Penambahan Kapasitas Memori"]
+  vm_storage: ["[VM] IN TOTAL Penambahan Kapasitas GB Storage"]
+  vm_asm: ["[VM] IN TOTAL Penambahan Kapasitas ASM Storage"]
+  bm_cpu: ["[Baremetal] IN TOTAL Penambahan Kapasitas CPU"]
+  bm_memori: ["[Baremetal] IN TOTAL Penambahan Kapasitas Memori"]
+  bm_storage: ["[Baremetal] IN TOTAL Penambahan Kapasitas GB Storage"]
+  bm_asm: ["[Baremetal] IN TOTAL Penambahan Kapasitas ASM Storage"]
+  target_quarter: ["Target penambahan ditahun apa"]
+  konfirmasi: ["Mohon dicheck kembali pengisian data"]
+options:
+  capacity_plan: "Capacity Plan"
+  method_mpm: "MPM"
+  method_wet: "Tanda Tangan Basah"
+  kebutuhan_tidak_prefix: "Tidak"      # Q8 diawali "Tidak" → CPR saja
+  kebutuhan_ya_prefix: "Ya"            # Q8 diawali "Ya" → CPR + CPD

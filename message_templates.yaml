@@ -1,0 +1,12 @@
+pending: "Pending Approval and under review by {name} ({jabatan}, Section {section})"
+pending_many: "Pending Approval and under review by {names} ({jabatan}, Section {section})"
+
+# Saran tindak lanjut per kode error, ditampilkan di kartu "Error sistem" pada dashboard.
+error_hints:
+  E-PAGE: "Buka link manual; minta SME memperbaiki link bila salah."
+  E-STATUS: "Tambahkan nilai ke status_mapping."
+  E-PARSE: "Bandingkan snapshot HTML dengan scraper_selectors.yaml."
+  E-LOGIN: "Login ulang SSO di profil Edge bot: python -m cptracker login"
+  E-SOURCE: "Pastikan file response msForm tersinkron dan tidak sedang terkunci."
+  E-MASTER: "Perbaiki file master data lalu upload ulang; master data lama tetap dipakai."
+  E-PUBLISH: "Jalankan satu run sampai selesai, lalu publish ulang."
